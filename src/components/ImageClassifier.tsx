@@ -64,10 +64,19 @@ const ImageClassifier: React.FC = () => {
       sx={{ 
         minHeight: '100vh', 
         bgcolor: '#f5f5f5',
-        padding: '20px'
+        padding: '20px',
+        background: 'linear-gradient(105deg, #ff7eb3, #8c9f6b, #ffeb99)',
+        backgroundSize: '400% 400%',
+        animation: 'gradientAnimation 1s ease infinite',
       }}
     >
-      <Typography variant="h4" color="primary" gutterBottom>
+      <Typography 
+        variant="h3"
+        color="primary"
+        fontWeight="bold"
+        gutterBottom
+        sx={{ marginBottom: '20px' }} 
+      >
         Image Classifier
       </Typography>
 
