@@ -2,6 +2,9 @@
 
 A web-based Image Classifier built with Next.js and Material-UI, leveraging TensorFlow.js and MobileNet for real-time image classification. This project features a modern, colorful UI with gradient backgrounds.
 
+<img width="1002" alt="Screenshot 2024-11-16 at 4 08 52 PM" src="https://github.com/user-attachments/assets/e8091714-16b9-4ccb-a861-75b857d9eee2">
+
+
 ## Features
 
 - **Real-Time Image Classification**: Upload an image to see its classification result instantly.
