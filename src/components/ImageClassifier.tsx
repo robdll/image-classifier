@@ -65,7 +65,7 @@ const ImageClassifier: React.FC = () => {
         minHeight: '100vh', 
         bgcolor: '#f5f5f5',
         padding: '20px',
-        background: 'linear-gradient(105deg, #ff7eb3, #8c9f6b, #ffeb99)',
+        background: 'linear-gradient(105deg, #eeee3c, #6956e3, #ffeb99)',
         backgroundSize: '400% 400%',
         animation: 'gradientAnimation 1s ease infinite',
       }}
