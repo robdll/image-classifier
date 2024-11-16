@@ -1,40 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Image Classifier
+
+A web-based Image Classifier built with Next.js and Material-UI, leveraging TensorFlow.js and MobileNet for real-time image classification. This project features a modern, colorful UI with gradient backgrounds.
+
+## Features
+
+- **Real-Time Image Classification**: Upload an image to see its classification result instantly.
+- **Confidence Score**: Displays the model's confidence in its prediction.
+- **Modern UI**: Styled with Material-UI and a dynamic gradient background.
+- **Responsive Design**: Works seamlessly across devices.
+
+## Demo
+
+[Link to Live Demo](https://your-vercel-deployment-link)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (latest stable version recommended)
+- npm or yarn installed
+
+### Installation
+
+1. **Clone the repository**:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/your-username/image-classifier.git
+  cd image-classifier
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm install
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Run the development server:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```bash
+  npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open http://localhost:3000 in your browser to see the app.
 
-## Learn More
+## Deployment
+This app is ready to be deployed on Vercel.  
+Follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+- Push your code to a GitHub repository.
+- Import the repository to Vercel.
+- Deploy the project directly from Vercel's dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Usage
+- Upload an image using the Upload Image button.
+- Click the Classify Image button to analyze the image.
+- View the classification result and confidence score.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
+  - **Next.js**: React framework for server-side rendering and static site generation.
+  - **Material-UI**: Styling framework for the modern UI design.
+  - **TensorFlow**.js: Machine learning in the browser.
+  - **MobileNet**: Pre-trained image classification model.
+  - **Vercel**: Deployment and hosting.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
