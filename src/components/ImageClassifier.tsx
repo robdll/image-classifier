@@ -51,19 +51,31 @@ const ImageClassifier: React.FC = () => {
     }
   };
 
+  const capitalizeFirstLetter = (text: string): string => {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  };
+
   return (
     <Box
       display="flex"
       flexDirection="column"
       alignItems="center"
       justifyContent="center"
-      sx={{ minHeight: '100vh', bgcolor: '#f5f5f5' }}
+      sx={{ 
+        minHeight: '100vh', 
+        bgcolor: '#f5f5f5',
+        padding: '20px'
+      }}
     >
       <Typography variant="h4" color="primary" gutterBottom>
         Image Classifier
       </Typography>
 
-      <Card sx={{ maxWidth: 400, p: 2 }}>
+      <Card sx={{ 
+          minWidth: '300px',
+          maxWidth: 400,
+          p: 2
+      }}>
         <CardContent>
           <Box display="flex" flexDirection="column" alignItems="center">
             <Button
@@ -87,7 +99,11 @@ const ImageClassifier: React.FC = () => {
                 id="uploaded-image"
                 src={imageURL}
                 alt="Uploaded"
-                sx={{ maxWidth: '100%', mb: 2 }}
+                sx={{ 
+                  maxHeight: '300px',
+                  width: 'auto',
+                  mb: 2
+                }}
               />
             )}
 
@@ -103,7 +119,7 @@ const ImageClassifier: React.FC = () => {
             {prediction && (
               <Box mt={2} textAlign="center">
                 <Typography variant="h6">
-                  Prediction: {prediction.className}
+                  Prediction: {capitalizeFirstLetter(prediction.className)}
                 </Typography>
                 <Typography variant="body2">
                   Confidence: {(prediction.probability * 100).toFixed(2)}%

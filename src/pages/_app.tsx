@@ -10,7 +10,7 @@ const theme = createTheme({
     secondary: { main: '#ff4081' }, // Pink
   },
   typography: {
-    fontFamily: 'Roboto, Arial, sans-serif',
+    fontFamily: 'Poppins, Arial, sans-serif',
   },
 });
 
